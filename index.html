@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MiEmpresa Movilidad y Asistencia — sillas de ruedas, muletas, andadores, bastones y accesorios de asistencia." />
+  <title>MiEmpresa | Movilidad y asistencia con confianza</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="topbar">Atención rápida y asesoría personalizada · Envíos a todo Colombia</div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="MiEmpresa inicio">
+        <span class="brand-mark" aria-hidden="true">+</span>
+        <span>
+          <strong>MiEmpresa</strong>
+          <small>Movilidad & Asistencia</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#productos">Productos</a>
+        <a href="#cotizacion">Mayoristas</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" id="accountBtn" aria-label="Abrir cuenta">👤</button>
+        <button class="cart-btn" id="cartBtn" aria-label="Abrir carrito">
+          <span>🛒</span><span>Carrito</span><b id="cartCount">0</b>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">SALUD · MOVILIDAD · AUTONOMÍA</span>
+          <h1>Movilidad y asistencia <span>con confianza.</span></h1>
+          <p>Soluciones confiables para mejorar la independencia y el bienestar de cada persona. Compra online o recibe asesoría para encontrar el producto adecuado.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#productos">Ver catálogo</a>
+            <a class="btn btn-secondary" href="https://wa.me/573000000000" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+          </div>
+          <div class="trust-row">
+            <div><strong>✓</strong> Compra segura</div>
+            <div><strong>✓</strong> Atención humana</div>
+            <div><strong>✓</strong> Productos seleccionados</div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-glow"></div>
+          <div class="wheelchair-illustration" aria-hidden="true">
+            <div class="chair-back"></div>
+            <div class="chair-seat"></div>
+            <div class="chair-arm"></div>
+            <div class="wheel wheel-big"></div>
+            <div class="wheel wheel-small"></div>
+            <div class="leg"></div>
+          </div>
+          <div class="hero-card-copy">
+            <span>Destacado</span>
+            <strong>Sillas de ruedas</strong>
+            <small>Manuales y eléctricas para diferentes necesidades.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-strip">
+      <div class="container category-grid">
+        <button class="category-card" data-filter="sillas"><span>♿</span><div><strong>Sillas de ruedas</strong><small>Manuales y eléctricas</small></div></button>
+        <button class="category-card" data-filter="muletas"><span>🦯</span><div><strong>Muletas</strong><small>Ajustables y estándar</small></div></button>
+        <button class="category-card" data-filter="andadores"><span>🚶</span><div><strong>Andadores</strong><small>Estabilidad y apoyo</small></div></button>
+        <button class="category-card" data-filter="accesorios"><span>🧰</span><div><strong>Accesorios</strong><small>Complementos de asistencia</small></div></button>
+      </div>
+    </section>
+
+    <section class="section" id="productos">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">CATÁLOGO</span>
+            <h2>Soluciones para cada necesidad</h2>
+          </div>
+          <div class="catalog-tools">
+            <select id="categoryFilter" aria-label="Filtrar productos">
+              <option value="todos">Todos</option>
+              <option value="sillas">Sillas de ruedas</option>
+              <option value="muletas">Muletas</option>
+              <option value="andadores">Andadores</option>
+              <option value="accesorios">Accesorios</option>
+            </select>
+            <input id="searchInput" type="search" placeholder="Buscar producto..." aria-label="Buscar producto" />
+          </div>
+        </div>
+        <div id="productsGrid" class="products-grid"></div>
+      </div>
+    </section>
+
+    <section class="section soft" id="nosotros">
+      <div class="container feature-grid">
+        <div>
+          <span class="eyebrow">POR QUÉ ELEGIRNOS</span>
+          <h2>Más que un producto: acompañamiento para decidir mejor.</h2>
+          <p>Diseñamos una experiencia sencilla para familias, cuidadores, profesionales de la salud e instituciones que necesitan soluciones de movilidad y asistencia.</p>
+        </div>
+        <div class="feature-list">
+          <article><span>01</span><div><h3>Orientación</h3><p>Te ayudamos a identificar la alternativa según uso, movilidad y entorno.</p></div></article>
+          <article><span>02</span><div><h3>Calidad</h3><p>Catálogo curado con productos pensados para uso cotidiano y hospitalario.</p></div></article>
+          <article><span>03</span><div><h3>Servicio</h3><p>Canales de contacto directos para compras individuales y pedidos institucionales.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cotizacion">
+      <div class="container quote-grid">
+        <div class="quote-intro">
+          <span class="eyebrow">VENTAS MAYORISTAS</span>
+          <h2>Compra para empresa, clínica o institución.</h2>
+          <p>Cuéntanos qué necesitas y nuestro equipo comercial recibirá tu solicitud para preparar una cotización.</p>
+          <div class="quote-contact"><span>✉</span><div><strong>ventas@miempresa.com</strong><small>Respondemos tus solicitudes comerciales.</small></div></div>
+        </div>
+        <form class="quote-form" id="quoteForm">
+          <div class="form-row"><label>Nombre<input required name="name" placeholder="Tu nombre completo" /></label><label>Email<input required type="email" name="email" placeholder="nombre@empresa.com" /></label></div>
+          <div class="form-row"><label>Teléfono<input required name="phone" placeholder="+57 300 000 0000" /></label><label>Empresa<input name="company" placeholder="Nombre de empresa" /></label></div>
+          <label>Mensaje<textarea required name="message" rows="5" placeholder="Cuéntanos productos, cantidades y ciudad..."></textarea></label>
+          <button class="btn btn-primary" type="submit">Solicitar cotización</button>
+          <p class="form-note">Tus datos serán utilizados para gestionar esta solicitud comercial.</p>
+          <div id="quoteStatus" class="form-status" role="status"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section cta-section">
+      <div class="container cta-card">
+        <div><span class="eyebrow">ATENCIÓN PERSONALIZADA</span><h2>¿No sabes qué producto necesitas?</h2><p>Escríbenos y te orientamos según tu caso.</p></div>
+        <a class="btn btn-light" href="https://wa.me/573000000000" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacto">
+    <div class="container footer-grid">
+      <div><div class="brand brand-footer"><span class="brand-mark">+</span><span><strong>MiEmpresa</strong><small>Movilidad & Asistencia</small></span></div><p>Comprometidos con la accesibilidad, la calidad y una atención cercana para nuestros clientes.</p></div>
+      <div><h4>Contacto</h4><p>📍 Cali, Colombia</p><p>☎ +57 300 000 0000</p><p>✉ ventas@miempresa.com</p></div>
+      <div><h4>Información</h4><a href="#productos">Catálogo</a><a href="#cotizacion">Cotización mayorista</a><button class="footer-link" id="accountBtnFooter">Mi cuenta</button></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 MiEmpresa. Todos los derechos reservados.</span><span>Compra responsable · Atención con confianza</span></div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/573000000000" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">◉<span>WhatsApp</span></a>
+
+  <aside class="drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-panel">
+      <div class="drawer-head"><div><span class="eyebrow">TU COMPRA</span><h3>Carrito</h3></div><button class="close-btn" data-close="cartDrawer">×</button></div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-summary"><div><span>Subtotal</span><strong id="subtotal">$0</strong></div><div><span>Impuestos (19%)</span><strong id="tax">$0</strong></div><div class="total-line"><span>Total</span><strong id="total">$0</strong></div><button class="btn btn-primary full" id="checkoutBtn">Finalizar compra</button><small>Los medios de pago reales requieren credenciales del proveedor.</small></div>
+    </div>
+  </aside>
+
+  <div class="modal" id="accountModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="close-btn" data-close="accountModal">×</button>
+      <div id="accountView"></div>
+    </div>
+  </div>
+
+  <div class="modal" id="paymentModal" aria-hidden="true">
+    <div class="modal-card payment-card">
+      <button class="close-btn" data-close="paymentModal">×</button>
+      <span class="eyebrow">CHECKOUT SEGURO</span><h3>Selecciona tu medio de pago</h3>
+      <div class="payment-options">
+        <button class="payment-option" data-method="card"><strong>💳 Tarjeta</strong><small>Visa, Mastercard y otras tarjetas</small></button>
+        <button class="payment-option" data-method="pse"><strong>🏦 PSE</strong><small>Pago desde bancos en Colombia</small></button>
+        <button class="payment-option" data-method="paypal"><strong>🅿 PayPal</strong><small>Compra usando tu cuenta PayPal</small></button>
+      </div>
+      <div id="paymentFormArea"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
